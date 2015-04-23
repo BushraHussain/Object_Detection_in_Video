@@ -11,6 +11,7 @@ namespace Prototype_projct
 {
     public partial class Form1 : Form
     {
+        static string path;
         public Form1()
         {
             InitializeComponent();
@@ -79,19 +80,33 @@ namespace Prototype_projct
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public  void button1_Click(object sender, EventArgs e)
         {
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "C# Corner Open File Dialog";
+            fdlg.InitialDirectory = @"c:\";
+            fdlg.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = fdlg.FileName;
+            }
 
+            path = fdlg.FileName;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //axWindowsMediaPlayer1.URL = @"C:\Users\Bushra Hussain\Desktop\HDDVRHDPortableDVRwi-YtPak.com.mp4";
+            axWindowsMediaPlayer1.URL = path;
+            axWindowsMediaPlayer2.URL = path;
+            axWindowsMediaPlayer4.URL = path;
         }
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-
+    
         }
 
         private void groupBox5_Enter(object sender, EventArgs e)
@@ -107,6 +122,11 @@ namespace Prototype_projct
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void axWindowsMediaPlayer2_Enter(object sender, EventArgs e)
+        {
+            
         }
 
        
