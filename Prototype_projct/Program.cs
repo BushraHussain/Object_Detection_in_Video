@@ -15,7 +15,17 @@ namespace Prototype_projct
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Detection_of_objects());
         }
     }
 }
+
+
+
+
+
+
+
+
+
+// you have to do it 
