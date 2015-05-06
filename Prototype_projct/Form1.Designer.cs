@@ -70,7 +70,7 @@
             this.groupBox1.Size = new System.Drawing.Size(717, 111);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox1.Enter += new System.EventHandler(this.file_upload_area_Enter);
             // 
             // groupBox2
             // 
@@ -108,7 +108,7 @@
             this.show_link.ReadOnly = true;
             this.show_link.Size = new System.Drawing.Size(548, 22);
             this.show_link.TabIndex = 3;
-            this.show_link.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.show_link.TextChanged += new System.EventHandler(this.showLink_TextChanged);
             // 
             // groupBox3
             // 
@@ -118,7 +118,7 @@
             this.groupBox3.Size = new System.Drawing.Size(235, 87);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.groupBox3.Enter += new System.EventHandler(this.Detect_Area_Enter);
             // 
             // Detect
             // 
@@ -128,7 +128,7 @@
             this.Detect.TabIndex = 2;
             this.Detect.Text = "Detect";
             this.Detect.UseVisualStyleBackColor = true;
-            this.Detect.Click += new System.EventHandler(this.button4_Click);
+            this.Detect.Click += new System.EventHandler(this.Detect_Click);
             // 
             // groupBox4
             // 
@@ -139,7 +139,6 @@
             this.groupBox4.Size = new System.Drawing.Size(215, 173);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label1
             // 
@@ -149,7 +148,7 @@
             this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Original";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.original_Click);
             // 
             // Original_player
             // 
@@ -171,7 +170,7 @@
             this.groupBox5.Size = new System.Drawing.Size(200, 179);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
+            this.groupBox5.Enter += new System.EventHandler(this.Area_for_Binary_player_Enter);
             // 
             // label2
             // 
@@ -181,6 +180,7 @@
             this.label2.Size = new System.Drawing.Size(48, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Binary";
+            this.label2.Click += new System.EventHandler(this.Binary_Click);
             // 
             // Binary_player
             // 
@@ -190,7 +190,7 @@
             this.Binary_player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Binary_player.OcxState")));
             this.Binary_player.Size = new System.Drawing.Size(194, 104);
             this.Binary_player.TabIndex = 1;
-            this.Binary_player.Enter += new System.EventHandler(this.axWindowsMediaPlayer2_Enter);
+            this.Binary_player.Enter += new System.EventHandler(this.binary_player_Enter);
             // 
             // groupBox6
             // 
@@ -202,6 +202,7 @@
             this.groupBox6.Size = new System.Drawing.Size(202, 184);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
+            this.groupBox6.Enter += new System.EventHandler(this.Area_for_output_player_Enter);
             // 
             // label3
             // 
@@ -211,7 +212,7 @@
             this.label3.Size = new System.Drawing.Size(55, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Output ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.output_Click);
             // 
             // Output_player
             // 
@@ -221,7 +222,7 @@
             this.Output_player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Output_player.OcxState")));
             this.Output_player.Size = new System.Drawing.Size(202, 104);
             this.Output_player.TabIndex = 2;
-            this.Output_player.Enter += new System.EventHandler(this.axWindowsMediaPlayer4_Enter);
+            this.Output_player.Enter += new System.EventHandler(this.Output_player_Enter);
             // 
             // axWindowsMediaPlayer3
             // 
@@ -246,7 +247,7 @@
             this.MaximizeBox = false;
             this.Name = "Detection_of_objects";
             this.Text = "Detection of Objects";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Detection_of_objects_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);

@@ -23,6 +23,10 @@ namespace Prototype_projct
         static string path;
         int iner = 0;
         int outer = 0;
+        string Caption1 = "Attributes of Video";
+        string Caption2 = "RGB values of pixel";
+        string caption3 = "InnerLoop Count";
+        string caption4= "OuterLoop Count";
         public Detection_of_objects()
         {
             InitializeComponent();
@@ -30,7 +34,7 @@ namespace Prototype_projct
 
        
 
-        private void groupBox3_Enter(object sender, EventArgs e)
+        private void Detect_Area_Enter(object sender, EventArgs e)
         {
 
         }
@@ -40,73 +44,53 @@ namespace Prototype_projct
 
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    OpenFileDialog ofd = new OpenFileDialog();
-        //    if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-        //    {
-        //        string str_file_name = openFileDialog1.FileName;
-        //        MessageBox.Show(str_file_name);
-
-        //    }
-
-
-           
-        //}
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void showLink_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Detection_of_objects_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void file_upload_area_Enter(object sender, EventArgs e)
         {
 
         }
 
       
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Detect_Click(object sender, EventArgs e)
         {
             VideoFileReader reader=new VideoFileReader();
+
+            reader.Open(@"C:\Users\Bushra Hussain\Pictures\2013-02-05 17.47.26 (2).jpg");
+           MessageBox.Show("width =  " + reader.Width + "\nheight =  " 
+                + reader.Height + "\nFPS  =  " + reader.FrameRate 
+                + "\nCodec  =  " + reader.CodecName ,Caption1);
            
-            reader.Open(@"path");
-             //check some of its attributes
-            //Console.WriteLine("width:  " + reader.Width);
-            //Console.WriteLine("Height: " + reader.Height);
-            //Console.WriteLine("Fps:    " + reader.FrameRate);
-            //Console.WriteLine("Codec:  " + reader.CodecName);
 
-            double width = reader.Width;
-             double Height=reader.Height;
-                double  Fps=   reader.FrameRate;
-              string Codec = reader.CodecName;
-
-
-             //Total 2279 frames & read 10 frames out of it
-            for (int i = 0; i < 10; i++)
-            {
+              for (int i = 0; i < 1; i++)  //Total 2279 frames , read 1 frames out of it
+              {
+            
                 Bitmap videoFrame = reader.ReadVideoFrame(); // process the frame somehow
                 
-                //Read all Pixels of frame & extract RGB info out of it 
-                for (int x = 0; x < videoFrame.Width; x++)
+                //Read all Pixels of frame & extract RGB info out of it
+                // x,y coordinates of pixel 
+                for (int x = 0; x < 1 ; x++) // original condition x < videoFrame.Width
                 {
-                    for (int y = 0; y < videoFrame.Height; y++)
+                    for (int y = 0; y < 5; y++) // original condition y < videoFrame.Height
                     {
-
-                        //Console.WriteLine("frame " + "[" + x+ "][" + y + "]  = " + videoFrame.GetPixel(j, k));
-                        Color clr = videoFrame.GetPixel(x, y); // x,y coordinates of pixel 
+                        MessageBox.Show("frame " + "[" + x + "][" + y + "]  = " + videoFrame.GetPixel(x, y) ,Caption2);
+                        //Console.WriteLine("frame " + "[" + x + "][" + y + "]  = " + videoFrame.GetPixel(x, y));
+                        Color clr = videoFrame.GetPixel(x, y); 
 
                         int red = clr.R;
                         int green = clr.G;
                         int blue = clr.B;
-                        //Console.WriteLine("RGB: " + "[" + x + "][" + y+ "] =  " + red + "  "
-                        //                   + green + " " + blue);
+                        Console.WriteLine("RGB: " + "[" + x + "][" + y + "] =  " + red + "  "
+                                           + green + " " + blue);
 
 
                         iner++;
@@ -120,18 +104,18 @@ namespace Prototype_projct
 
             }
             reader.Close();
-           // Console.WriteLine("Inner loop count = " + iner);
-           // Console.WriteLine("outer loop count = " + outer);
+            MessageBox.Show("Inner loop count = " + iner, caption3);
+            MessageBox.Show("outer loop count = " + outer, caption4);
 
 
         }
 
-        private void axWindowsMediaPlayer4_Enter(object sender, EventArgs e)
+        private void Output_player_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void output_Click(object sender, EventArgs e)
         {
 
         }
@@ -167,27 +151,44 @@ namespace Prototype_projct
     
         }
 
-        private void groupBox5_Enter(object sender, EventArgs e)
+        private void Area_for_binary_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
+        private void Area_for_original_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void original_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void axWindowsMediaPlayer2_Enter(object sender, EventArgs e)
+        private void binary_player_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void Detect_Click(object sender, EventArgs e)
+       
+
+        private void Binary_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Area_for_output_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Area_for_output_player_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Area_for_Binary_player_Enter(object sender, EventArgs e)
         {
 
         }

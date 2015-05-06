@@ -50,3 +50,4 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Vision.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.Detection_of_objects.resources
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\PrototypeOF_Object_Detection_Project.csprojResolveAssemblyReference.cache
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Prototype_projct.exe.config
