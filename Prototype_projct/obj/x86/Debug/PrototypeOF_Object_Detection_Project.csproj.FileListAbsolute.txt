@@ -9,9 +9,13 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Interop.WMPLib.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.pdb
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge - Copy.dll
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Controls - Copy.dll
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.DebuggerVisualizers (2010) - Copy.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Imaging.xml
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.Detection_of_objects.resources
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\PrototypeOF_Object_Detection_Project.csprojResolveAssemblyReference.cache
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Prototype_projct.exe.config
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Controls.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.DebuggerVisualizers (2010).dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Fuzzy.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Genetic.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Imaging.dll
@@ -30,10 +34,16 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.VFW.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.Ximea.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Vision.dll
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\IPPrototyper.exe
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\DockingToolbar.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\iplab.exe
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Microsoft.CSharp.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\SourceGrid2.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\SourceLibrary.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\WeifenLuo.WinFormsUI.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.xml
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Controls.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Fuzzy.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Genetic.xml
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Imaging.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Imaging.Formats.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.MachineLearning.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Math.xml
@@ -48,6 +58,3 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.VFW.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.Ximea.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Vision.xml
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.Detection_of_objects.resources
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\PrototypeOF_Object_Detection_Project.csprojResolveAssemblyReference.cache
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Prototype_projct.exe.config

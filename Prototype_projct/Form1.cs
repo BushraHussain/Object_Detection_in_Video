@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-//using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AForge.Video.FFMPEG;
+using AForge.Imaging;
+using AForge;
+using AForge.Imaging.Filters;
+
 
 
 
@@ -23,6 +26,8 @@ namespace Prototype_projct
         static string path;
         int iner = 0;
         int outer = 0;
+        static string image = @"C:\Users\Bushra Hussain\Pictures\2013-02-05 17.47.26 (2).jpg";
+
         string Caption1 = "Attributes of Video";
         string Caption2 = "RGB values of pixel";
         string caption3 = "InnerLoop Count";
@@ -106,6 +111,13 @@ namespace Prototype_projct
             reader.Close();
             MessageBox.Show("Inner loop count = " + iner, caption3);
             MessageBox.Show("outer loop count = " + outer, caption4);
+          
+
+
+
+
+
+
 
 
         }
@@ -140,7 +152,7 @@ namespace Prototype_projct
         {
             //axWindowsMediaPlayer1.settings.autoStart = false;
             Original_player.URL = path;
-            //axWindowsMediaPlayer2.settings.autoStart = false;
+        //axWindowsMediaPlayer2.settings.autoStart = false;
             Binary_player.URL = path;
             //axWindowsMediaPlayer4.settings.autoStart = false;
             Output_player.URL = path;
@@ -190,13 +202,56 @@ namespace Prototype_projct
 
         private void Area_for_Binary_player_Enter(object sender, EventArgs e)
         {
+ 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+            System.Drawing.Image image = System.Drawing.Image.FromFile(path);
+            pictureBox1.Image = image;
+            pictureBox1.Height = image.Height;
+            pictureBox1.Width = image.Width;
+            //Bitmap IMAGE = new Bitmap(@"C:\Users\Bushra Hussain\Desktop\sample1.jpg");
+            Bitmap original=new Bitmap(@"C:\Users\Bushra Hussain\Desktop\sample1.jpg");
+            //public static Bitmap MakeGrayscale3(Bitmap original)
+            //{
+             
+            Bitmap IMAGE = new Bitmap(@"C:\Users\Bushra Hussain\Desktop\sample1.jpg");
+            // Create instance of Blobcounter class 
+            BlobCounter blobcounter = new BlobCounter();
+            //Process input image 
+            blobcounter.ProcessImage(IMAGE);
+            //get information about detected objects
+            Blob[] blob = blobcounter.GetObjectsInformation();
+            foreach (Blob arr in blob)
+            {
+                MessageBox.Show(arr.Area.ToString());
+        
+            }
+            MessageBox.Show("information of image" + blobcounter.GetObjectsInformation());
+            
+
+
+
+
+
+
+         
+
+
+           
+
+
+
+
+
 
         }
 
        
 
 
-
+    }
 
     }
-}

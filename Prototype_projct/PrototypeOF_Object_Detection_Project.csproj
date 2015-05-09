@@ -53,82 +53,117 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AForge - Copy">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge - Copy.dll</HintPath>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Controls - Copy">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Controls - Copy.dll</HintPath>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.DebuggerVisualizers %282010%29 - Copy">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.DebuggerVisualizers (2010) - Copy.dll</HintPath>
+    <Reference Include="AForge.DebuggerVisualizers %282010%29">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.DebuggerVisualizers (2010).dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Fuzzy">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Fuzzy.dll</HintPath>
+    <Reference Include="AForge.Fuzzy, Version=2.2.4.0, Culture=neutral, PublicKeyToken=cb12670d0eae17c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Fuzzy.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Genetic">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Genetic.dll</HintPath>
+    <Reference Include="AForge.Genetic, Version=2.2.4.0, Culture=neutral, PublicKeyToken=4336634eeb41b69b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Genetic.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Imaging">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Imaging.dll</HintPath>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Imaging.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Imaging.Formats">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Imaging.Formats.dll</HintPath>
+    <Reference Include="AForge.Imaging.Formats, Version=2.2.4.0, Culture=neutral, PublicKeyToken=8065ed5a639199a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Imaging.Formats.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Imaging.IPPrototyper">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Imaging.IPPrototyper.dll</HintPath>
+    <Reference Include="AForge.Imaging.IPPrototyper, Version=1.0.1.1, Culture=neutral, PublicKeyToken=c6e9a6d4c86d47e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Imaging.IPPrototyper.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.MachineLearning">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.MachineLearning.dll</HintPath>
+    <Reference Include="AForge.MachineLearning, Version=2.2.4.0, Culture=neutral, PublicKeyToken=b3f1bdd78212f4e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.MachineLearning.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Math">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Math.dll</HintPath>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Math.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Neuro">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Neuro.dll</HintPath>
+    <Reference Include="AForge.Neuro, Version=2.2.5.0, Culture=neutral, PublicKeyToken=2094f4ea39731d4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Neuro.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Robotics.Lego">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Robotics.Lego.dll</HintPath>
+    <Reference Include="AForge.Robotics.Lego, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5f361631ec856b74, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Robotics.Lego.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Robotics.Surveyor">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Robotics.Surveyor.dll</HintPath>
+    <Reference Include="AForge.Robotics.Surveyor, Version=2.2.4.0, Culture=neutral, PublicKeyToken=7ed9f718a0f5b2f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Robotics.Surveyor.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Robotics.TeRK">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Robotics.TeRK.dll</HintPath>
+    <Reference Include="AForge.Robotics.TeRK, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5c0f140128226168, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Robotics.TeRK.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.dll</HintPath>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.DirectShow">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.DirectShow.dll</HintPath>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.FFMPEG">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.FFMPEG.dll</HintPath>
+    <Reference Include="AForge.Video.FFMPEG, Version=2.2.5.0, Culture=neutral, PublicKeyToken=03563089b1be05dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.FFMPEG.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.Kinect">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.Kinect.dll</HintPath>
+    <Reference Include="AForge.Video.Kinect, Version=2.2.4.0, Culture=neutral, PublicKeyToken=96a9a097745e71d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.Kinect.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.VFW">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.VFW.dll</HintPath>
+    <Reference Include="AForge.Video.VFW, Version=2.2.4.0, Culture=neutral, PublicKeyToken=a82f807c999637c8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.VFW.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Video.Ximea">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Video.Ximea.dll</HintPath>
+    <Reference Include="AForge.Video.Ximea, Version=2.2.4.0, Culture=neutral, PublicKeyToken=5cdcd64958730f99, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.Ximea.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Vision">
-      <HintPath>..\..\..\..\..\Desktop\Release\AForge.Vision.dll</HintPath>
+    <Reference Include="AForge.Vision, Version=2.2.5.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="DockingToolbar">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\DockingToolbar.dll</HintPath>
+    </Reference>
+    <Reference Include="iplab">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\iplab.exe</HintPath>
     </Reference>
     <Reference Include="IPPrototyper">
       <HintPath>..\..\..\..\..\Desktop\Release\IPPrototyper.exe</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid2">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\SourceGrid2.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceLibrary">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\SourceLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\WeifenLuo.WinFormsUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
