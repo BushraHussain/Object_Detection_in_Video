@@ -11,7 +11,6 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.pdb
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Imaging.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\Prototype_projct.Detection_of_objects.resources
-C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\PrototypeOF_Object_Detection_Project.csprojResolveAssemblyReference.cache
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\Prototype_projct.exe.config
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Controls.dll
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.DebuggerVisualizers (2010).dll
@@ -58,3 +57,10 @@ C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_d
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.VFW.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Video.Ximea.xml
 C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AForge.Vision.xml
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AsfMojo.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AsfMojoCmd.exe
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\AsfMojoUI.exe
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\GalaSoft.MvvmLight.Extras.WPF4.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\GalaSoft.MvvmLight.WPF4.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\bin\Debug\NAudio.dll
+C:\Users\Bushra Hussain\Documents\Visual Studio 2010\Projects\Prototype_object_detection\Prototype_projct\obj\x86\Debug\PrototypeOF_Object_Detection_Project.csprojResolveAssemblyReference.cache

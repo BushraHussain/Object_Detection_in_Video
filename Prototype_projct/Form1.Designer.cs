@@ -47,6 +47,8 @@
             this.Output_player = new AxWMPLib.AxWindowsMediaPlayer();
             this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Show_picture = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -58,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Output_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -67,10 +70,10 @@
             this.groupBox1.Controls.Add(this.Upload);
             this.groupBox1.Controls.Add(this.browse);
             this.groupBox1.Controls.Add(this.show_link);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 55);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(825, 111);
+            this.groupBox1.Size = new System.Drawing.Size(1149, 111);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.file_upload_area_Enter);
@@ -238,19 +241,39 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(40, 409);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 409);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 191);
+            this.pictureBox1.Size = new System.Drawing.Size(222, 191);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // Show_picture
+            // 
+            this.Show_picture.Location = new System.Drawing.Point(301, 653);
+            this.Show_picture.Name = "Show_picture";
+            this.Show_picture.Size = new System.Drawing.Size(146, 38);
+            this.Show_picture.TabIndex = 6;
+            this.Show_picture.Text = "Show picture";
+            this.Show_picture.UseVisualStyleBackColor = true;
+            this.Show_picture.Click += new System.EventHandler(this.show_picture_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(492, 409);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(213, 200);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(37, 150);
+            this.button1.Location = new System.Drawing.Point(895, 172);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Show picture";
+            this.button1.Size = new System.Drawing.Size(138, 44);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Extract_images";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -259,8 +282,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(849, 617);
+            this.ClientSize = new System.Drawing.Size(1173, 703);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Show_picture);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -285,7 +310,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Output_player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -309,6 +336,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Show_picture;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
 
     }

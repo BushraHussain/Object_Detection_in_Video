@@ -134,8 +134,33 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Desktop\VP Project\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Vision.dll</HintPath>
     </Reference>
+    <Reference Include="AsfMojo">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\AsfMojo.dll</HintPath>
+    </Reference>
+    <Reference Include="AsfMojoCmd">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\AsfMojoCmd.exe</HintPath>
+    </Reference>
+    <Reference Include="AsfMojoUI">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\AsfMojoUI.exe</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>..\..\..\..\..\Desktop\DirectShowLib-2005.dll</HintPath>
+    </Reference>
     <Reference Include="DockingToolbar">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\DockingToolbar.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameGrabber">
+      <HintPath>..\..\..\..\..\Desktop\FrameGrabber.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DexterLib">
+      <HintPath>..\..\..\..\..\Desktop\Amina_dll\Interop.DexterLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="iplab">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\iplab.exe</HintPath>
@@ -143,11 +168,20 @@
     <Reference Include="IPPrototyper">
       <HintPath>..\..\..\..\..\Desktop\Release\IPPrototyper.exe</HintPath>
     </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\..\..\..\Desktop\VP Project\AsfMojo 1.2 Binaries\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="SourceGrid2">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\SourceGrid2.dll</HintPath>
     </Reference>
     <Reference Include="SourceLibrary">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AForge.NET\IPLab\bin\SourceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Desktop\stdole.dll\stdole.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
