@@ -24,20 +24,26 @@ namespace Prototype_projct
 {
   public partial class Detection_of_objects : Form
     {
-     static Bitmap videoFrame;
-     
+      public static string file_path;
+     //static Bitmap videoFrame;
+     //static Bitmap videoFrame_copy;
+     //static VideoFileWriter writer;
       
-        //PitureBox.SizeMode = SizeMode.Stretch
-        static string path; // File path
-        static int count1 = 0;
-        int iner = 0;       // for inner loop counter
-        int outer = 0;     // for outer loop counter
-        string Caption1 = "Attributes of Video";
-        string Caption2 = "RGB values of pixel";
-        static int count = 0;
-        string caption3 = "InnerLoop Count";
-        string caption4 = "OuterLoop Count";
-        Bitmap original = new Bitmap(@"C:\Users\Bushra Hussain\Desktop\Capture1.PNG");
+     //   //PitureBox.SizeMode = SizeMode.Stretch
+       // File path
+     //   static int count1 = 0;
+     //   int iner = 0;       // for inner loop counter
+     //   int outer = 0;     // for outer loop counter
+     //   string Caption1 = "Attributes of Video";
+     //   string Caption2 = "RGB values of pixel";
+     //   static int count = 0;
+     //   string caption3 = "InnerLoop Count";
+     //   string caption4 = "OuterLoop Count";
+      Bitmap original;
+     //   static int New_hei=640;
+     //   static int New_wid=480;
+
+
         public Detection_of_objects()
         {
             InitializeComponent();
@@ -72,176 +78,13 @@ namespace Prototype_projct
 
       
 
-        private void Detect_Click(object sender, EventArgs e) // read video 
+        private void Detect_Click(object sender, EventArgs e)
         {
-                VideoFileReader reader=new VideoFileReader();
-                reader.Open(path);
-            // Show attributes of video into messagebox
-                MessageBox.Show("width =  " + reader.Width + "\nheight =  " 
-                + reader.Height + "\nFPS  =  " + reader.FrameRate 
-                + "\nCodec  =  " + reader.CodecName ,Caption1);
-           
-            // Reading video frame by frame & Extract RGB info out of it 
-              for (int i = 0; i < 2279; i++)  //Total 2279 frames , read 1 frame out of it
-              {
-            
-                 videoFrame = reader.ReadVideoFrame(); // process the frame somehow
-                  // create filter
-                 YCbCrFiltering filter = new YCbCrFiltering();
-                 // set color ranges to keep
-                 filter.Cb = new Range(-0.2f, 0.0f);
-                 filter.Cr = new Range(0.26f, 0.5f);
-                 // apply the filter
-                 filter.ApplyInPlace(videoFrame);  // Applied filter
-
-                 videoFrame = MakeGrayscale3(videoFrame); // method to convert iamge to grayscale
-
-                  
-BlobCounter blobCounter = new BlobCounter(); // draw rectangle over image 
-blobCounter.MinWidth = 5;
-blobCounter.MinHeight = 5;
-blobCounter.FilterBlobs = true;
-blobCounter.ProcessImage(videoFrame);
-
-Rectangle[] rects = blobCounter.GetObjectsRectangles();
-foreach (Rectangle recs in rects)
-    if (rects.Length > 0)
-    {
-        foreach (Rectangle objectRect in rects)
-        {
-
-            Graphics g = Graphics.FromImage(videoFrame);
-
-            using (Pen pen = new Pen(Color.FromArgb(160, 255, 160), 5))
-            {
-                g.DrawRectangle(pen, objectRect);
-            }
-
-            g.Dispose();
-        }
-    }                             // rectangle drawn
-
-// only take big object
-
-// only take big image 
-blobCounter.MinWidth = 5;
-blobCounter.MinHeight = 5;
-blobCounter.FilterBlobs = true;
-blobCounter.ObjectsOrder = ObjectsOrder.Size;
-blobCounter.ProcessImage(videoFrame);
-Rectangle[] rec = blobCounter.GetObjectsRectangles();
-foreach (Rectangle recs in rec)
-    if (rects.Length > 0)
-    {
-        Rectangle objectRect = rec[0];
-        Graphics g = Graphics.FromImage(videoFrame);
-        using (Pen pen = new Pen(Color.FromArgb(160, 255, 160), 5))
-        {
-            g.DrawRectangle(pen, objectRect);
-        }
-        g.Dispose();
-    }
-                //  //corner detector 
-                //MoravecCornersDetector mcd = new MoravecCornersDetector();
-                //// process image searching for corners
-                //List<IntPoint> corners = mcd.ProcessImage(videoFrame);
-                //// process points
-                //foreach (IntPoint corner in corners)
-                //{
-                //    // ... 
-                //}
-
-                //// create corner maker filter
-                //CornersMarker filter1 = new CornersMarker(mcd, Color.Blue);
-                //// apply the filter
-                //filter1.ApplyInPlace(videoFrame);
-                  // insert videoframe to picture box 3
-                
-                  // save into a folder
-    videoFrame.Save(@"F:\Snaps\Pic.jpg" + count1++.ToString() + ".jpg",
-    System.Drawing.Imaging.ImageFormat.Jpeg);
-                //SaveFileDialog s = new SaveFileDialog();
-                //s.FileName = "Image";// Default file name
-                //s.DefaultExt = ".Jpg";// Default file extension
-                //s.Filter = "Image (.jpg)|*.jpg";
-                //s.InitialDirectory = (@"C:\Users\Bushra Hussain\Desktop\Directory");
-                //s.RestoreDirectory = true;
-                //if (s.ShowDialog() == DialogResult.OK)
-                //{
-                //    // Save Image
-                //    string filename = s.FileName;
-                //    // the using statement causes the FileStream's dispose method to be
-                //    // called when the object goes out of scope
-                //    using (System.IO.FileStream fstream = new System.IO.FileStream(filename, System.IO.FileMode.Create))
-                //    {
-                //        videoFrame.Save(fstream, System.Drawing.Imaging.ImageFormat.Jpeg);
-                //        fstream.Close();
-                //    }
-                //}
-
-
-
-                //// Create instance of Blobcounter class 
-                BlobCounter blobcounter = new BlobCounter();
-
-                //Process input image 
-                blobcounter.ProcessImage(videoFrame);
-                
-                //get information about detected objects
-                Blob[] blob = blobcounter.GetObjectsInformation();
-                foreach (Blob arr in blob)
-                {
-                    //MessageBox.Show("information of image" + arr.Rectangle +
-                    //"\n  " + arr.CenterOfGravity + "\n   " + arr.ColorMean +
-                    //"\n   " + arr.ColorStdDev);
-                    count++;
-
-
-                }
-
-              
-                //Read all Pixels of frame & extract RGB info out of it
-                // x,y coordinates of pixel 
-                //for (int x = 0; x < 1 ; x++) // original condition x < videoFrame.Width
-                //{
-                //    for (int y = 0; y < 5; y++) // original condition y < videoFrame.Height
-                //    {
-                //        MessageBox.Show("frame " + "[" + x + "][" + y + "]  = " + videoFrame.GetPixel(x, y) ,Caption2);
-                //        iner++;
-                //    }
-                //    outer++;
-                //}
-
-                // Apply color Filter on each image frame
-                  // This filter change background color of image into Black 
-                //ColorFiltering filter = new ColorFiltering();
-                //// set color ranges to keep
-                //filter.Red = new IntRange(100, 255);
-                //filter.Green = new IntRange(0, 75);
-                //filter.Blue = new IntRange(0, 75);
-                //// apply the filter
-                //filter.ApplyInPlace(videoFrame);
-
-
-
-                // dispose the frame when it is no longer required
-                videoFrame.Dispose();
-
-            }
-            reader.Close();
-            //MessageBox.Show("Inner loop count = " + iner, caption3);
-            //MessageBox.Show("outer loop count = " + outer, caption4);
-
-            MessageBox.Show("Total objects in video " + count);
-
-
-
-
-
-
+            Detect_object D_obj = new Detect_object();
+            D_obj.detct_object(file_path);
         }
 
-        private void Output_player_Enter(object sender, EventArgs e)
+       private void Output_player_Enter(object sender, EventArgs e)
         {
 
         }
@@ -265,20 +108,21 @@ foreach (Rectangle recs in rec)
                 show_link.Text = fdlg.FileName;
             }
 
-            path = fdlg.FileName;
+             file_path= fdlg.FileName;
         }
 
         private void upload_Click(object sender, EventArgs e)
         {
-            // Assign video file path to window media players 
+      
             //axWindowsMediaPlayer4.settings.autoStart = false;
-            Original_player.URL = path;
-            Binary_player.URL = path;
-          //  Binary_player.HasPropertyPages = filter.ApplyInPlace(videoFrame);
-            //Output_player.URL = videoFrame.ToString();
-        
-            Output_player.URL = path;
+            Original_player.URL = file_path;
+            Binary_player.URL = file_path;
+            //Output_player.URL = "en.code-bude_test_video.avi";
         }
+ 
+            
+        
+        
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
@@ -330,8 +174,8 @@ foreach (Rectangle recs in rec)
       // whether code of filter is working or not. 
         private void show_picture_Click(object sender, EventArgs e)
         {
-
-            System.Drawing.Image image = System.Drawing.Image.FromFile(path);
+             
+            System.Drawing.Image image = System.Drawing.Image.FromFile(file_path);
             // Show original image into picture box.
             pictureBox1.Image = image;
             pictureBox1.Height = image.Height;
@@ -342,7 +186,7 @@ foreach (Rectangle recs in rec)
             //  Bitmap IMAGE = new Bitmap(path);
 
             // Show image After Applying Color Filter 
-            Bitmap IMAGEE = new Bitmap(path);
+            Bitmap IMAGEE = new Bitmap(file_path);
 
 
             // create filter
@@ -358,18 +202,18 @@ foreach (Rectangle recs in rec)
           IMAGEE=MakeGrayscale3(IMAGEE); // method to convert iamge to grayscale
 
 
-BlobCounter blobCounter = new BlobCounter(); // draw rectangle over image 
-blobCounter.MinWidth = 5;
-blobCounter.MinHeight = 5;
-blobCounter.FilterBlobs = true;
-blobCounter.ProcessImage(IMAGEE);
+          BlobCounter blobCounter = new BlobCounter(); // draw rectangle over image 
+          blobCounter.MinWidth = 5;
+          blobCounter.MinHeight = 5;
+          blobCounter.FilterBlobs = true;
+          blobCounter.ProcessImage(IMAGEE);
 
-Rectangle[] rects = blobCounter.GetObjectsRectangles();
-foreach (Rectangle recs in rects)
-    if (rects.Length > 0)
-    {
-        foreach (Rectangle objectRect in rects)
-        {
+          Rectangle[] rects = blobCounter.GetObjectsRectangles();
+          foreach (Rectangle recs in rects)
+          if (rects.Length > 0)
+          {
+          foreach (Rectangle objectRect in rects)
+          {
 
             Graphics g = Graphics.FromImage(IMAGEE);
 
@@ -382,7 +226,7 @@ foreach (Rectangle recs in rects)
         }
 
     }
-            // only take big image 
+// only take big image 
 blobCounter.MinWidth = 5;
 blobCounter.MinHeight = 5;
 blobCounter.FilterBlobs = true;
@@ -393,7 +237,7 @@ foreach (Rectangle recs in rec)
     if (rects.Length > 0)
     {
         Rectangle objectRect = rec[0];
-        Graphics g = Graphics.FromImage(IMAGEE);
+        Graphics g = Graphics.FromImage(image);
         using (Pen pen = new Pen(Color.FromArgb(160, 255, 160), 5))
         {
             g.DrawRectangle(pen, objectRect);
@@ -424,14 +268,14 @@ foreach (Rectangle recs in rec)
             //    // ... 
             //}
             // create corner detector's instance
-            MoravecCornersDetector mcd = new MoravecCornersDetector();
-            // process image searching for corners
-            List<IntPoint> corners = mcd.ProcessImage(IMAGEE);
-            // process points
-            foreach (IntPoint corner in corners)
-            {
-                // ... 
-            }
+            //MoravecCornersDetector mcd = new MoravecCornersDetector();
+            //// process image searching for corners
+            //List<IntPoint> corners = mcd.ProcessImage(IMAGEE);
+            //// process points
+            //foreach (IntPoint corner in corners)
+            //{
+            //    // ... 
+            //}
 
 
 
@@ -545,6 +389,28 @@ foreach (Rectangle recs in rec)
             g.Dispose();
             return newBitmap;
         }
+
+        private void Make_video_Click_2(object sender, EventArgs e)
+        {
+            //int hei=640;
+            //int wid=480;
+            //VideoFileWriter writer = new VideoFileWriter();
+            //writer.Open("en.code-bude_test_video.avi", wid, hei, 25, VideoCodec.MPEG4, 1000000);
+
+            //for (int i = 0; i < 125; i++)
+            //{
+            //    writer.WriteVideoFrame(videoFrame);
+            //}
+
+            //writer.Close();
+        }
+
+
+
+
+
+
+        
        
 
 
